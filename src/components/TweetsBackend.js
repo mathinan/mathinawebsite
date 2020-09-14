@@ -5,7 +5,7 @@ export default class TweetsBackend extends Component {
     render() {
         return (
             <div>
-                <p className="title-gist">index.js</p>
+                <p className="gist-title">index.js</p>
                 <ReactEmbedGist
                     gist="mathinan/e24acc2e1896c58a4b4be152c29bd7d5"
                 />

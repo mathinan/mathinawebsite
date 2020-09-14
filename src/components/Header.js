@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { Container, Row, Col } from 'react-bootstrap'
 import Github from '../img/icon_github.png'
 
@@ -10,15 +10,21 @@ export default class Header extends Component {
                 <Container>
                     <Row>
                         <Col xs={{span: 12, order: 1}} md={{order: 1}}>
-                            <Link to="/" className="name">Mathina N</Link>
+                            <NavLink to="/" className="name">Mathina</NavLink>
                         </Col>
                         <Col xs={{span: 12, order: 3}} md={{order: 2}}>
-                            <Link to="/" className="nav">Tweets</Link>
+                            <NavLink to="/" className="nav-link">Tweets</NavLink>
                         </Col>
                         <Col xs={{span: 12, order: 4}} md={{order: 3}}>
-                            <Link to="/project" className="nav">Project</Link>
+                            <NavLink to="/project" className="nav-link" activeClassName="nav-selected">Project</NavLink>
                         </Col>
-                        <Col xs={{span: 12, order: 2}} md={{order: 4}}>
+                        <Col xs={{span: 12, order: 5}} md={{order: 4}}>
+                            <NavLink to="/pre-project" className="nav-link" activeClassName="nav-selected">Pre-Project</NavLink>
+                        </Col>
+                        <Col xs={{span: 12, order: 6}} md={{order: 5}}>
+                            <NavLink to="/internship" className="nav-link" activeClassName="nav-selected">Internship</NavLink>
+                        </Col>
+                        <Col xs={{span: 12, order: 2}} md={{order: 6}}>
                             <a href="https://www.github.com/mathinan" rel="noopener noreferrer" target="_blank">
                                 <img src={Github} alt="icon_github" width="24" height="24" />
                             </a>

@@ -20,14 +20,22 @@ body {
     text-decoration: none;
 }
 
-.nav {
+.nav-link {
     font-size: 20px;
     color: #fff;
 }
 
-.nav:hover {
+.nav-link:hover {
     color: #000;
     text-decoration: none;
+}
+
+.nav-selected {
+    font-weight: bold;
+}
+
+.nav-selected:hover {
+    color: #fff;
 }
 
 .title {
@@ -40,6 +48,22 @@ body {
     text-align: center;
 }
 
-.title-gist {
+.gist-title {
     font-weight: bold;
+}
+
+.case-style {
+    margin-top: 25px;
+}
+
+.case-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+.case-label {
+    text-align: center;
+    margin-top: 15px;
 }
