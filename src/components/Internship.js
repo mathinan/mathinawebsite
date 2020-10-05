@@ -6,8 +6,8 @@ import Chat2 from '../img/internship/chat2.png'
 import Chat3 from '../img/internship/chat3.png'
 
 export default class Internship extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             cases: [
                 {

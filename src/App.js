@@ -8,13 +8,6 @@ import PreProject from './components/PreProject';
 import Internship from './components/Internship';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
-  }
-
   render() {
     return (
       <Router>
