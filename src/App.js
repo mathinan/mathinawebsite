@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Tweets from './components/Tweets';
 import Project from './components/Project';
 import PreProject from './components/PreProject';
 import Internship from './components/Internship';
@@ -12,8 +11,7 @@ class App extends React.Component {
     return (
       <Router>
         <Header></Header>
-        <Route exact path="/" component={Tweets}></Route>
-        <Route path="/project" component={Project}></Route>
+        <Route exact path="/" component={Project}></Route>
         <Route path="/pre-project" component={PreProject}></Route>
         <Route path="/internship" component={Internship}></Route>
       </Router>
